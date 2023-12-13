@@ -1,0 +1,192 @@
+.container.contact_container {
+  /* width: 58%; */
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 12%;
+  overflow: hidden;
+  padding: 0 0 5rem 0;
+  width: var(--container-width-md);
+}
+
+#contact {
+  position: relative;
+}
+
+#contact > h3,
+#contact > h1 {
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+#contact > h1 {
+  font-size: 34px;
+  font-weight: 800;
+}
+
+#contact > h1::after {
+  position: absolute;
+  content: "CONTACT";
+  font-size: 102px;
+  top: -80%;
+  letter-spacing: 20px;
+  color: rgb(57, 56, 56);
+  font-weight: 800;
+  opacity: 0.85;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -10;
+  font-family: "Montserrat" !important;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  background: url(../../assets/mess.jpeg);
+  background-size: cover;
+  width: 100vw;
+  top: -18%;
+  left: -20px;
+  right: 0;
+  bottom: 0;
+  z-index: -4;
+  opacity: 0.75;
+}
+
+#contact > h3::after,
+#contact > h3::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  bottom: 0;
+  width: 20%;
+  height: 1.3px;
+  background: var(--color-yellow);
+}
+
+#contact > h3::after {
+  right: 18%;
+}
+#contact > h3::before {
+  left: 18%;
+}
+
+.contact_options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact_option {
+  background-color: rgba(34, 31, 31, 0.5);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  width: 300px;
+}
+
+.contact_option:hover {
+  background-color: transparent;
+  border-color: rgb(94, 91, 91);
+}
+
+.contact_option > svg {
+  font-size: 22px;
+}
+
+.contact_option:hover svg {
+  color: var(--color-yellow);
+}
+
+.contact_option a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+/* ======= Form ======= */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 1px solid var(--color-white);
+  resize: none;
+  font-family: sans-serif;
+  color: var(--color-yellow);
+  font-size: 16px;
+  letter-spacing: 1.1px;
+}
+
+/* =================== MEDIA QUERIES FOR "MEDIUM DEVICES" ================= */
+
+@media screen and (max-width: 1024px) {
+  .container.contact_container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+.contact_options{
+  flex-direction: row;
+  justify-content: center;
+}
+
+  #contact::before {
+    background-position: center;
+    left: 0;
+    top: 0;
+  }
+
+  #contact > h1::after {
+    font-size: 60px;
+    top: -80%;
+    letter-spacing: 10px;
+    left: 0;
+    z-index: -10;
+  }
+
+  #contact > h3::after,
+  #contact > h3::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    bottom: 0;
+    width: 15%;
+    height: 1.3px;
+    background: var(--color-yellow);
+  }
+}
+
+/* =================== MEDIA QUERIES FOR "SMALL DEVICES" ================= */
+
+@media screen and (max-width: 600px) {
+  .container.contact_container {
+    width: var(--container-width-sm);
+    padding: 10px;
+    place-items: center;
+  }
+  #contact::before {
+    top: 0;
+    background-position: center;
+  }
+
+  .contact_options{
+    flex-direction: column;
+    /* justify-content: center; */
+  }
+
+  #contact > h3::after,
+  #contact > h3::before {
+    display: none;
+  }
+}

@@ -1,0 +1,166 @@
+.skills_container {
+  display: flex;
+  justify-content: center;
+}
+
+#experience {
+  position: relative;
+}
+
+#experience > h1 {
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+#experience > h3 {
+  position: relative;
+  letter-spacing: 1.2px;
+}
+
+#experience > h3::after,
+#experience > h3::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  bottom: 0;
+  width: 20%;
+  height: 1.3px;
+  background: var(--color-yellow);
+}
+#experience > h3::after {
+  right: 18%;
+}
+#experience > h3::before {
+  left: 18%;
+}
+
+#experience::before {
+  position: absolute;
+  content: "SKILLS";
+  font-size: 140px;
+  top: -15%;
+  letter-spacing: 20px;
+  color: rgb(57, 56, 56);
+  font-weight: 800;
+  opacity: 0.45;
+  bottom: 0;
+  left: 27%;
+  right: 0;
+  z-index: -10;
+  font-family: "Montserrat" !important;
+}
+
+.skills_container > div {
+  background: rgba(34, 31, 31, 0.5);
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.skills_container > div:hover {
+  background: transparent;
+  border-color: var(--color-yellow);
+  cursor: default;
+}
+
+.skills_container > div h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+  letter-spacing: 1.5px;
+}
+
+.skill_content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.5em;
+}
+
+.skill_detail {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  transition: var(--transition);
+  padding: 0.35rem 0.5rem;
+  border-radius: 2rem;
+  transform: scale(1);
+}
+
+.skill_detail:hover {
+  background: #2358873d;
+  color: var(--color-yellow);
+  transform: scale(1.1);
+}
+
+.skill_detail > h4 {
+  letter-spacing: 1.2px;
+}
+
+.skill_detail > svg {
+  font-size: 24px;
+  transform: scale(1);
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+.skill_detail > svg:hover {
+  color: var(--color-yellow);
+  transform: scale(1.08);
+}
+
+/*   ====================Media Quearies "Medium devices  */
+
+@media screen and (max-width: 1024px) {
+  .skills_container > div {
+    /* width: 80%; */
+    padding: 0.75;
+    margin: 0 auto;
+  }
+
+  .skill_content {
+    gap: 1.5rem;
+  }
+
+  .skill_detail > h4 {
+    letter-spacing: 0;
+  }
+  #experience::before {
+    font-size: 100px;
+    top: -15%;
+    letter-spacing: 20px;
+    bottom: 0;
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .skills_container {
+    padding: 7px;
+  }
+  .skills_container > div {
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  .skill_detail {
+    gap: 1rem;
+    transition: var(--transition);
+    padding: 0.35rem 0.5rem;
+  }
+  .skill_detail > h4 {
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+
+  #experience::before {
+    font-size: 60px;
+    top: -10%;
+    letter-spacing: 10px;
+    bottom: 0;
+    left: 15%;
+  }
+  #experience > h3::after,
+  #experience > h3::before {
+    display: none;
+  }
+}

@@ -1,0 +1,180 @@
+header {
+  height: 100vh;
+  padding-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.container_header {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+.container_header > h1 {
+  font-size: 42px;
+  color: var(--color-yellow);
+  opacity: 0.85;
+  font-weight: bolder;
+}
+
+.container_header > h3 {
+  letter-spacing: 2px;
+  font-size: 22px;
+}
+
+/* .container_header::after {
+  position: absolute;
+  content: "HELLO";
+  font-size: 162px;
+  top: 25%;
+  letter-spacing: 40px;
+  color: rgb(57, 56, 56);
+  font-weight: 800;
+  opacity: 0.55;
+  bottom: 0;
+  left: 10%;
+  right: 0;
+  z-index: -10;
+  font-family: "Montserrat" !important;
+} */
+
+header {
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: fixed;
+  background: url("../../assets/bgteture.avif");
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.4;
+
+  z-index: -4;
+}
+
+/* ========= CTA ========== */
+
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+/* === Header Socials === */
+
+.header_socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  position: absolute;
+  left: 10%;
+  bottom: 8rem;
+  font-size: large;
+}
+
+.header_socials svg {
+  transition: var(--transition);
+  transform: scale(1);
+  color: #fca311;
+}
+
+.header_socials svg:hover {
+  transform: scale(1.1);
+}
+
+.header_socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background-color: #fca311;
+}
+
+/* ======== Image ======== */
+
+.me {
+  background: linear-gradient(rgba(255, 255, 255, 0.25), transparent);
+  width: 22rem;
+  height: 24rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 4rem;
+  border-radius: 12rem 12rem 0 0;
+  overflow: hidden;
+  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+
+/* ======Scroll Down ======= */
+
+.scroll_down {
+  position: absolute;
+  right: 7%;
+  bottom: 10rem;
+  transform: rotate(90deg);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 1.1px;
+  color: #fca311;
+}
+
+.scroll_down::after {
+  content: "→";
+  display: inline-block;
+  width: 1px;
+  height: 2rem;
+  font-size: 16px;
+}
+
+/* =================== MEDIA QUERIES FOR "MEDIUM DEVICES" ================= */
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 90vh;
+  }
+
+  .container_header {
+    text-align: center;
+    height: 80%;
+    position: relative;
+  }
+
+  .container_header::after {
+    font-size: 120px;
+    top: 30%;
+    letter-spacing: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    height: 90vh;
+  }
+
+  .container_header > h1 {
+    font-size: 32px;
+  }
+
+  .header_socials,
+  .scroll_down {
+    display: none;
+  }
+
+  .cta {
+    gap: 10px;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .container_header::after {
+    font-size: 100px;
+    top: 30%;
+    letter-spacing: 5px;
+  }
+}
