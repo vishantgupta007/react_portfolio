@@ -1,19 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Portfolio.css";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { FaGithub } from "react-icons/fa6";
 import { projects } from "../../data";
 
 const Portfolio = () => {
+  const [filteredProjects, setFilteredProjects] = useState(projects);
+
+  const handleFilter = (tech) => {
+    const newFilteredProjects = tech
+      ? projects.filter((project) => project.tech === tech)
+      : projects;
+
+    setFilteredProjects(newFilteredProjects);
+  };
+
   return (
     <section id="portfolio">
       <h3>My Recent Work</h3>
       <h1>PROJECTS</h1>
 
+      {/* Buttons for filter projects using filterFunctionality */}
+
+      <div className="techTitle">
+        <button className="btn" onClick={() => handleFilter("")}>
+          ALL
+        </button>
+        <button className="btn" onClick={() => handleFilter("React Native")}>
+          React Native
+        </button>
+        <button className="btn" onClick={() => handleFilter("React")}>
+          React
+        </button>
+        <button className="btn" onClick={() => handleFilter("React/ API")}>
+         React/ API
+        </button>
+        <button
+          className="btn"
+          onClick={() => handleFilter("HTML, CSS, JavaScript")}
+        >
+          HTML/ CSS/ JavaScript
+        </button>
+      </div>
+
+      {/* displaying all the projects using transition library and map method */}
+
       <div className="container portfolio_container">
-        {projects.map((project) => {
+        {filteredProjects.map((project) => {
           return (
-            <article className="portfolio_item" key={project.id}>
+            <div key={project.id} className="portfolio_item fade">
               <div className="portfolio_item_img">
                 <img src={project.img} alt={project.title} />
               </div>
@@ -27,7 +62,7 @@ const Portfolio = () => {
                   <MdOutlineRemoveRedEye />
                 </a>
               </div>
-            </article>
+            </div>
           );
         })}
       </div>

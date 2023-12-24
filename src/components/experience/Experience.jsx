@@ -5,6 +5,8 @@ import { MdScreenshotMonitor } from "react-icons/md";
 import { TbBrandTailwind } from "react-icons/tb";
 import { TbBrandReactNative } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
+import { AiOutlineBranches } from "react-icons/ai";
+import { TiCloudStorage } from "react-icons/ti";
 import "./Experience.css";
 
 const Experience = () => {
@@ -35,6 +37,14 @@ const Experience = () => {
           <div className="skill_detail">
             <DiJavascript1 />
             <h4>JavaScript</h4>
+          </div>
+          <div className="skill_detail">
+            <AiOutlineBranches />
+            <h4>DOM Manupilation</h4>
+          </div>
+          <div className="skill_detail">
+            <TiCloudStorage />
+            <h4>REST API</h4>
           </div>
           <div className="skill_detail">
             <FaReact />

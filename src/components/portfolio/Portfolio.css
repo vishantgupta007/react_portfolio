@@ -135,6 +135,21 @@ h1 {
   opacity: 0.5;
 }
 
+.techTitle {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5rem 0;
+  padding: 10px;
+}
+
+.techTitle button {
+  font-family: "Meteoric Light";
+  color: var(--color-yellow);
+}
+
 /* =================== MEDIA QUERIES FOR "MEDIUM DEVICES" ================= */
 
 @media screen and (max-width: 1024px) {

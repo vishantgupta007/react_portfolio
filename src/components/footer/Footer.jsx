@@ -40,6 +40,9 @@ const Footer = () => {
         <a href="https://vishantgupta009@gmail.com" target="_blank">
           <SiGmail />
         </a>
+        <a href="https://github.com/vishantgupta007" target="_blank">
+          <FaGithub />
+        </a>
       </div>
 
 

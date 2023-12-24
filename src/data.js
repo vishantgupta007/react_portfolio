@@ -15,6 +15,7 @@ export const projects = [
       "Crafted a room booking app mobile application using React Native and expo-router. Designed to facilitate the process of booking rooms. Users can explore a wide range of rooms, and access detailed information.",
     github: "https://github.com/vishantgupta007/react_native_Room-Booking-App",
     live: "https://github.com/vishantgupta007/react_native_Room-Booking-App",
+    tech: "React Native",
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ export const projects = [
       " Designed as an engaging user-friendly clothing platform, using React and React-router the website is essentially divided into distinct sections for men, women, and children.",
     github: "https://github.com/vishantgupta007/react-shopping-project",
     live: "https://thevastra.netlify.app",
+    tech: "React",
   },
   {
     id: 3,
@@ -33,6 +35,7 @@ export const projects = [
       "Designed and developed a real-time cryptocurrency using React and integrating API for fetching data to provide users with live updates on crypto-currency prices.",
     github: "https://github.com/vishantgupta007/coinquest",
     live: "https://vishantgupta007.github.io/coinquest/",
+    tech: "React/ API",
   },
   {
     id: 4,
@@ -42,6 +45,7 @@ export const projects = [
       "Developed a gym membership application using React, a popular JavaScript library for building dynamic user interfaces.",
     github: "https://github.com/vishantgupta007/flexmuscle",
     live: "https://vishantgupta007.github.io/flexmuscle/",
+    tech: "React",
   },
   {
     id: 5,
@@ -51,6 +55,7 @@ export const projects = [
       "Developed a responsive Nike landing page using React and Tailwind CSS, ensuring an optimal user experience across various devices and screen sizes, while maintaining a clean and modern design",
     github: "https://github.com/vishantgupta007/nike_website_landing_page",
     live: "https://nike-website-landingpage.netlify.app",
+    tech: "React",
   },
   {
     id: 6,
@@ -60,6 +65,7 @@ export const projects = [
       "Developed a user-friendly interface enabling customers to view products and add items to the cart using a blend of HTML, CSS, and JavaScript",
     github: "https://github.com/vishantgupta007/trendyThread",
     live: "https://vishantgupta007.github.io/trendyThread/",
+    tech: "HTML, CSS, JavaScript",
   },
   {
     id: 7,
@@ -69,5 +75,6 @@ export const projects = [
       "Crafted an engaging landing page with a modern design, incorporating a dynamic dark mode functionality using HTML, CSS, and JavaScript",
     github: "https://github.com/vishantgupta007/vishantgupta007.github.io",
     live: "https://vishantgupta007.github.io/",
+    tech: "HTML, CSS, JavaScript",
   },
 ];
