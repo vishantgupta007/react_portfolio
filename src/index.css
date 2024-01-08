@@ -41,6 +41,27 @@ html {
   overflow-x: hidden;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: var(--color-yellow);
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} */
+
 body {
   font-family: "Meteoric Light";
   background: black;
@@ -117,7 +138,7 @@ a:hover {
   background: transparent;
   color: var(--color-white);
   transform: scale(1.1);
-  border-color: var(--color-yellow  );
+  border-color: var(--color-yellow);
 }
 
 .btn-primary {

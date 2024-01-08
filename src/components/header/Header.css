@@ -4,6 +4,29 @@ header {
   margin-bottom: 5rem;
 }
 
+header > span {
+  position: relative;
+}
+
+header > span::after {
+  position: absolute;
+  content: "HTML \A CSS \A JavaScript \A DOM \A RestAPI \A React \A Redux";
+  font-size: 52px;
+  line-height: -10px;
+
+  top: -10%;
+  bottom: 0;
+  left: 40px;
+  right: 0;
+  letter-spacing: 10px;
+
+  color: rgb(57, 56, 56);
+  font-weight: 800;
+  opacity: 0.55;
+  z-index: -10;
+  font-family: "Montserrat" !important;
+}
+
 .container_header {
   text-align: center;
   height: 100%;
@@ -21,23 +44,6 @@ header {
   letter-spacing: 2px;
   font-size: 22px;
 }
-
-/* .container_header::after {
-  position: absolute;
-  content: "HELLO";
-  font-size: 162px;
-  top: 25%;
-  letter-spacing: 40px;
-  color: rgb(57, 56, 56);
-  font-weight: 800;
-  opacity: 0.55;
-  bottom: 0;
-  left: 10%;
-  right: 0;
-  z-index: -10;
-  font-family: "Montserrat" !important;
-} */
-
 header {
   position: relative;
 }
@@ -111,7 +117,6 @@ header::before {
   transition: var(--transition);
 }
 
-
 /* ======Scroll Down ======= */
 
 .scroll_down {
@@ -140,6 +145,13 @@ header::before {
     height: 90vh;
   }
 
+  header > span::after {
+    font-size: 45px;
+    top: 10%;
+    left: 10px;
+    letter-spacing: 5px;
+  }
+
   .container_header {
     text-align: center;
     height: 80%;
@@ -155,6 +167,12 @@ header::before {
 @media screen and (max-width: 600px) {
   header {
     height: 90vh;
+  }
+
+  header > span::after {
+    font-size: 25px;
+    top: 10%;
+    left: 10px;
   }
 
   .container_header > h1 {

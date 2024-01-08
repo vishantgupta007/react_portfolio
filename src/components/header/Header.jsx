@@ -8,6 +8,7 @@ import { Typewriter } from "react-simple-typewriter";
 const Header = () => {
   return (
     <header>
+      <span></span>
       <div className="container container_header" id="home">
         <h3>Hello I'm</h3>
         <h1>Vishant Gupta</h1>

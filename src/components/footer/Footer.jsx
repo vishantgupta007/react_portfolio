@@ -1,53 +1,66 @@
 import React from "react";
+import "./Footer.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import "./Footer.css";
 import { FaXTwitter } from "react-icons/fa6";
+
+
+const footerSocials = [
+  {
+    icon: <FaLinkedin />,
+    link: "https://www.linkedin.com/in/vishant-gupta-373409293",
+  },
+  {
+    icon: <FaXTwitter />,
+    link: "https://twitter.com/arreyguptaji",
+  },
+  {
+    icon: <SiGmail />,
+    link: "https://vishantgupta009@gmail.com",
+  },
+  {
+    icon: <FaGithub />,
+    link: "https://github.com/vishantgupta007",
+  },
+];
+
+const footerLinks = [
+  { id: 1, title: "Home", href: "#" },
+  { id: 2, title: "About", href: "#about" },
+  { id: 3, title: "Skills", href: "#experience" },
+  { id: 4, title: "Projects", href: "#portfolio" },
+  { id: 5, title: "Contact", href: "#contact" },
+];
 
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className="footer_logo">Vishant Gupta</a>
+      <a href="#" className="footer_logo">
+        Vishant Gupta
+      </a>
 
       <ul className="perma_links">
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#experience">Skills</a>
-        </li>
-        <li>
-          <a href="#portfolio">Projects</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
+        {footerLinks.map((icon) => {
+          return (
+            <li key={icon.id}>
+              <a href={icon.href}>{icon.title}</a>
+            </li>
+          );
+        })}
       </ul>
 
       <div className="footer_social">
-        <a
-          href="https://www.linkedin.com/in/vishant-gupta-373409293"
-          target="_blank"
-        >
-          <FaLinkedin />
-        </a>
-        <a href="https://twitter.com/arreyguptaji" target="_blank">
-          <FaXTwitter />
-        </a>
-        <a href="https://vishantgupta009@gmail.com" target="_blank">
-          <SiGmail />
-        </a>
-        <a href="https://github.com/vishantgupta007" target="_blank">
-          <FaGithub />
-        </a>
+        {footerSocials.map((social, index) => {
+          return (
+            <a key={index} href={social.link} target="_blank">
+              {social.icon}
+            </a>
+          );
+        })}
       </div>
 
-
       <div className="footer_copyright">
-        <small>&copy; Vishant. All rights are reserved.</small>
+        <small>&copy; Vishant Gupta. All rights are reserved.</small>
       </div>
     </footer>
   );

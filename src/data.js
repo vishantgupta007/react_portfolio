@@ -6,13 +6,16 @@ import nike from "./assets/nike.png";
 import shopping from "./assets/shopping.jpg";
 import land from "./assets/landing.png";
 
+
+
+
 export const projects = [
   {
     id: 1,
     title: "Room Booking App - ROOM NEST",
     img: room,
     about:
-      "Crafted a room booking app mobile application using React Native and expo-router. Designed to facilitate the process of booking rooms. Users can explore a wide range of rooms, and access detailed information.",
+      "Room booking app mobile application using React Native and expo-router. Designed to facilitate the process of booking rooms. Users can explore a wide range of rooms, and access detailed information.",
     github: "https://github.com/vishantgupta007/react_native_Room-Booking-App",
     live: "https://github.com/vishantgupta007/react_native_Room-Booking-App",
     tech: "React Native",
@@ -22,7 +25,7 @@ export const projects = [
     title: "Shopping Website - The VASTRA",
     img: vastra,
     about:
-      " Designed as an engaging user-friendly clothing platform, using React and React-router the website is essentially divided into distinct sections for men, women, and children.",
+      " Designed (Desktop Only) as an engaging user-friendly clothing platform, using React and React-router the website is essentially divided into distinct sections for men, women, and children.",
     github: "https://github.com/vishantgupta007/react-shopping-project",
     live: "https://thevastra.netlify.app",
     tech: "React",
@@ -78,3 +81,9 @@ export const projects = [
     tech: "HTML, CSS, JavaScript",
   },
 ];
+
+
+
+
+
+
