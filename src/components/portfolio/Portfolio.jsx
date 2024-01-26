@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./Portfolio.css";
-import { MdOutlineRemoveRedEye } from "react-icons/md";
+import { MdRemoveRedEye } from "react-icons/md";
 import { FaGithub } from "react-icons/fa6";
 import { projects } from "../../data";
+
 
 const Portfolio = () => {
   const [filteredProjects, setFilteredProjects] = useState(projects);
@@ -33,7 +34,7 @@ const Portfolio = () => {
           React
         </button>
         <button className="btn" onClick={() => handleFilter("React/ API")}>
-         React/ API
+          React/ API
         </button>
         <button
           className="btn"
@@ -46,28 +47,35 @@ const Portfolio = () => {
       {/* displaying all the projects using transition library and map method */}
 
       <div className="container portfolio_container">
-        {filteredProjects.map((project) => {
-          return (
-            <div key={project.id} className="portfolio_item fade">
-              <div className="portfolio_item_img">
-                <img src={project.img} alt={project.title} />
-              </div>
-              <h4 className="project_name">{project.title}</h4>
-              <p>{project.about}</p>
-              <div className="portfolio_item_cta">
-                <a href={project.github} target="_blank">
-                  <FaGithub />
-                </a>
-                <a href={project.live} target="_blank">
-                  <MdOutlineRemoveRedEye />
-                </a>
-              </div>
+        {filteredProjects.map((project) => (
+          <div
+            key={project.id}
+            layoutId={project.id}
+            className="portfolio_item fade"
+            onClick={() => setSelectedId(project.id)}>
+
+            <div className="portfolio_item_img">
+              <img src={project.img} alt={project.title} />
             </div>
-          );
-        })}
+            <h4 className="project_name">{project.title}</h4>
+            <p>{project.about}</p>
+            <div className="portfolio_item_cta">
+              <a href={project.github} target="_blank">
+                <FaGithub />
+              </a>
+              <a href={project.live} target="_blank">
+                <MdRemoveRedEye />
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
+
     </section>
   );
 };
 
 export default Portfolio;
+
+
+

@@ -7,7 +7,9 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Experience from "./components/experience/Experience";
 
+
 function App() {
+
   return (
     <>
       <Header />

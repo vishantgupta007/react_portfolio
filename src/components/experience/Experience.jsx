@@ -52,7 +52,7 @@ const Experience = () => {
           </div>
           <div className="skill_detail">
             <TbBrandRedux />
-            <h4>Redux</h4>
+            <h4>Redux-Toolkit</h4>
           </div>
           <div className="skill_detail">
             <TbBrandReactNative />

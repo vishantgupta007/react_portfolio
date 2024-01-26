@@ -6,7 +6,7 @@ import { VscTools } from "react-icons/vsc";
 import "./Navbar.css";
 
 export const navItems = [
-  { id: "#", icon: <AiOutlineHome />, title: "home" },
+  { id: "#", icon: <AiOutlineHome />, title: "Home" },
   { id: "#about", icon: <AiOutlineUser />, title: "About" },
   { id: "#experience", icon: <VscTools />, title: "Skills" },
   { id: "#portfolio", icon: <FaRegFolderOpen />, title: "Projects" },
@@ -16,7 +16,7 @@ export const navItems = [
 const Navbar = () => {
   const [activeNav, setActiveNav] = useState("#");
 
-// console.log(navItems)
+  // console.log(navItems)
 
   return (
     // for displaying bg color on icon after clicking on them
