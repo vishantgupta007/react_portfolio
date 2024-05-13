@@ -4,9 +4,9 @@ import { MdRemoveRedEye } from "react-icons/md";
 import { FaGithub } from "react-icons/fa6";
 import { projects } from "../../data";
 
-
 const Portfolio = () => {
   const [filteredProjects, setFilteredProjects] = useState(projects);
+  // const [selectedId, setSelectedId] = useState(null);
 
   const handleFilter = (tech) => {
     const newFilteredProjects = tech
@@ -50,10 +50,9 @@ const Portfolio = () => {
         {filteredProjects.map((project) => (
           <div
             key={project.id}
-            layoutId={project.id}
             className="portfolio_item fade"
-            onClick={() => setSelectedId(project.id)}>
-
+            onClick={() => setSelectedId(project.id)}
+          >
             <div className="portfolio_item_img">
               <img src={project.img} alt={project.title} />
             </div>
@@ -70,12 +69,8 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
-
     </section>
   );
 };
 
 export default Portfolio;
-
-
-

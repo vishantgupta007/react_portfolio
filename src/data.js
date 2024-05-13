@@ -5,9 +5,15 @@ import gym from "./assets/gyn.png";
 import nike from "./assets/nike.png";
 import shopping from "./assets/shopping.jpg";
 import land from "./assets/landing.png";
-
-
-
+import { FaHtml5, FaCss3Alt, FaReact, FaCss3 } from "react-icons/fa6";
+import { MdScreenshotMonitor } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
+import { AiOutlineBranches } from "react-icons/ai";
+import { TiCloudStorage } from "react-icons/ti";
+import { SiMui, SiTailwindcss, SiWebflow } from "react-icons/si";
+import { DiJavascript1 } from "react-icons/di";
+import { TbBrandRedux, TbBrandReactNative } from "react-icons/tb";
+import { FaGitlab } from "react-icons/fa6";
 
 export const projects = [
   {
@@ -82,8 +88,75 @@ export const projects = [
   },
 ];
 
-
-
-
-
-
+// export const techStacks = [
+//   {
+//     id: 1,
+//     tech: "HTML",
+//     icon: <FaHtml5 />,
+//   },
+//   {
+//     id: 2,
+//     tech: "CSS",
+//     icon: <FaCss3Alt />,
+//   },
+//   {
+//     id: 3,
+//     tech: "Web-Responsiveness",
+//     icon: <MdScreenshotMonitor />,
+//   },
+//   {
+//     id: 4,
+//     tech: "JavaScript",
+//     icon: <DiJavascript1 />,
+//   },
+//   {
+//     id: 5,
+//     tech: "DOM Manupilation",
+//     icon: <AiOutlineBranches />,
+//   },
+//   {
+//     id: 6,
+//     tech: "REST API",
+//     icon: <TiCloudStorage />,
+//   },
+//   // {
+//   //   id: 7,
+//   //   tech: "HTML",
+//   //   icon: <FaHtml5 />,
+//   // },
+//   {
+//     id: 7,
+//     tech: "React.js",
+//     icon: <FaReact />,
+//   },
+//   {
+//     id: 8,
+//     tech: "Redux-Toolkit",
+//     icon: <TbBrandRedux />,
+//   },
+//   {
+//     id: 10,
+//     tech: "React Native",
+//     icon: <TbBrandReactNative />,
+//   },
+//   {
+//     id: 11,
+//     tech: "Tailwind CSS",
+//     icon: <SiTailwindcss />,
+//   },
+//   {
+//     id: 12,
+//     tech: "Material UI",
+//     icon: <SiMui />,
+//   },
+//   {
+//     id: 13,
+//     tech: "Webflow",
+//     icon: <SiWebflow />,
+//   },
+//   {
+//     id: 14,
+//     tech: "Git/ Github/ Gitlab",
+//     icon: <FaGitlab />,
+//   },
+// ];

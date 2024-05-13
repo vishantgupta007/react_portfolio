@@ -10,8 +10,8 @@ header > span {
 
 header > span::after {
   position: absolute;
-  content: "HTML \A CSS \A JavaScript \A DOM \A RestAPI \A React \A Redux";
-  font-size: 52px;
+  content: "HTML \A CSS \A JavaScript \A DOM \A RestAPI \A React.js \A Redux \A TailWindCSS \A MaterialUI \A Webflow";
+  font-size: 45px;
   line-height: -10px;
 
   top: -10%;

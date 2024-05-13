@@ -1,13 +1,14 @@
 import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa6";
 import { DiJavascript1 } from "react-icons/di";
-import { TbBrandRedux } from "react-icons/tb";
+import { TbBrandRedux, TbBrandReactNative } from "react-icons/tb";
 import { MdScreenshotMonitor } from "react-icons/md";
-import { TbBrandTailwind } from "react-icons/tb";
-import { TbBrandReactNative } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineBranches } from "react-icons/ai";
 import { TiCloudStorage } from "react-icons/ti";
+import { SiMui, SiTailwindcss, SiWebflow } from "react-icons/si";
+
 import "./Experience.css";
+// import { techStacks } from "../../data";
 
 const Experience = () => {
   return (
@@ -27,10 +28,6 @@ const Experience = () => {
             <h4>CSS</h4>
           </div>
           <div className="skill_detail">
-            <TbBrandTailwind />
-            <h4>TailwindCSS</h4>
-          </div>
-          <div className="skill_detail">
             <MdScreenshotMonitor />
             <h4>Web-Responsiveness</h4>
           </div>
@@ -48,7 +45,7 @@ const Experience = () => {
           </div>
           <div className="skill_detail">
             <FaReact />
-            <h4>React</h4>
+            <h4>React.js</h4>
           </div>
           <div className="skill_detail">
             <TbBrandRedux />
@@ -60,8 +57,26 @@ const Experience = () => {
           </div>
           <div className="skill_detail">
             <FaGithub />
-            <h4>Git/ Github</h4>
+            <h4>Git/ Github/ Gitlab</h4>
           </div>
+          <div className="skill_detail">
+            <SiTailwindcss />
+            <h4>Tailwind CSS</h4>
+          </div>
+          <div className="skill_detail">
+            <SiMui />
+            <h4>Material UI</h4>
+          </div>
+          <div className="skill_detail">
+            <SiWebflow />
+            <h4>Webflow</h4>
+          </div>
+          {/* {techStacks.map((techStack) => (
+            <div key={techStack.id} className="skill_detail">
+              {renderIcon(techStack.icon)}
+              <h4>{techStack.tech}</h4>
+            </div>
+          ))} */}
         </div>
       </div>
     </section>
