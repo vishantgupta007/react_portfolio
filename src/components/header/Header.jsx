@@ -8,33 +8,39 @@ import { useScroll, motion, useSpring } from "framer-motion";
 
 const Header = () => {
   const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress)
+  const scaleX = useSpring(scrollYProgress);
 
   return (
     <>
-      <motion.div style={{
-        scaleX,
-        background: "#fca311",
-        transformOrigin: "left",
-        position: "fixed",
-        top: 0,
-        width: "100%",
-        height: "5px",
-        zIndex: 99
-      }} />
+      <motion.div
+        style={{
+          scaleX,
+          background: "#fca311",
+          transformOrigin: "left",
+          position: "fixed",
+          top: 0,
+          width: "100%",
+          height: "5px",
+          zIndex: 99,
+        }}
+      />
       <header>
         <span></span>
         <div className="container container_header" id="home">
           <h3>Hello I'm</h3>
           <h1>Vishant Gupta</h1>
-          <h3>
+          <h2 className="text-[54px] font-sans text-gray-100 opacity-30">
             <Typewriter
               words={[
                 "Frontend Developer",
                 "React Developer",
-                "JavaScript",
+                "JavaScript Developer",
                 "Redux",
                 "Web Responsiveness",
+                "DOM Manipulation",
+                "REST API",
+                "Tainwind CSS",
+                "Material UI",
               ]}
               loop={true}
               cursor
@@ -44,7 +50,7 @@ const Header = () => {
               deleteSpeed={50}
               delaySpeed={1000}
             />
-          </h3>
+          </h2>
           <CTA />
 
           <HeaderSocials />

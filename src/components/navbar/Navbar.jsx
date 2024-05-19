@@ -3,6 +3,8 @@ import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { FaRegFolderOpen } from "react-icons/fa";
 import { RiMessageLine } from "react-icons/ri";
 import { VscTools } from "react-icons/vsc";
+import relaxAtro from "../../assets/relaxAstro.png";
+// import Link from "react-router";
 import "./Navbar.css";
 
 export const navItems = [
@@ -20,20 +22,34 @@ const Navbar = () => {
 
   return (
     // for displaying bg color on icon after clicking on them
-
-    <nav>
-      {navItems.map((item) => (
+    <main>
+      <nav>
+        {navItems.map((item) => (
+          <a
+            title={item.title}
+            key={item.id}
+            href={item.id}
+            onClick={() => setActiveNav(item.id)}
+            className={activeNav === item.id ? "active" : ""}
+          >
+            {item.icon}
+          </a>
+        ))}
+      </nav>
+      <div className="relaxed-astro">
         <a
-          title={item.title}
-          key={item.id}
-          href={item.id}
-          onClick={() => setActiveNav(item.id)}
-          className={activeNav === item.id ? "active" : ""}
+          href="https://www.linkedin.com/in/vishant-gupta-373409293/"
+          target="_blank"
         >
-          {item.icon}
+          <img src={relaxAtro} className="navbar-img" />
         </a>
-      ))}
-    </nav>
+        <p className="linkedIn">
+          Hey! thanks for hanging around, <br />
+          Don't forget to visit my LinkedIn.
+          <br /> Just tap on me
+        </p>
+      </div>
+    </main>
   );
 };
 

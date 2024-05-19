@@ -5,15 +5,16 @@ import gym from "./assets/gyn.png";
 import nike from "./assets/nike.png";
 import shopping from "./assets/shopping.jpg";
 import land from "./assets/landing.png";
-import { FaHtml5, FaCss3Alt, FaReact, FaCss3 } from "react-icons/fa6";
-import { MdScreenshotMonitor } from "react-icons/md";
-import { FaGithub } from "react-icons/fa";
-import { AiOutlineBranches } from "react-icons/ai";
-import { TiCloudStorage } from "react-icons/ti";
-import { SiMui, SiTailwindcss, SiWebflow } from "react-icons/si";
-import { DiJavascript1 } from "react-icons/di";
-import { TbBrandRedux, TbBrandReactNative } from "react-icons/tb";
-import { FaGitlab } from "react-icons/fa6";
+import soon from "./assets/soon.jpg";
+// import { FaHtml5, FaCss3Alt, FaReact, FaCss3 } from "react-icons/fa6";
+// import { MdScreenshotMonitor } from "react-icons/md";
+// import { FaGithub } from "react-icons/fa";
+// import { AiOutlineBranches } from "react-icons/ai";
+// import { TiCloudStorage } from "react-icons/ti";
+// import { SiMui, SiTailwindcss, SiWebflow } from "react-icons/si";
+// import { DiJavascript1 } from "react-icons/di";
+// import { TbBrandRedux, TbBrandReactNative } from "react-icons/tb";
+// import { FaGitlab } from "react-icons/fa6";
 
 export const projects = [
   {
@@ -34,7 +35,7 @@ export const projects = [
       " Designed (Desktop Only) as an engaging user-friendly clothing platform, using React and React-router the website is essentially divided into distinct sections for men, women, and children.",
     github: "https://github.com/vishantgupta007/react-shopping-project",
     live: "https://thevastra.netlify.app",
-    tech: "React",
+    tech: "React.js",
   },
   {
     id: 3,
@@ -44,7 +45,7 @@ export const projects = [
       "Designed and developed a real-time cryptocurrency using React and integrating API for fetching data to provide users with live updates on crypto-currency prices.",
     github: "https://github.com/vishantgupta007/coinquest",
     live: "https://vishantgupta007.github.io/coinquest/",
-    tech: "React/ API",
+    tech: "React.js/ API",
   },
   {
     id: 4,
@@ -54,7 +55,7 @@ export const projects = [
       "Developed a gym membership application using React, a popular JavaScript library for building dynamic user interfaces.",
     github: "https://github.com/vishantgupta007/flexmuscle",
     live: "https://vishantgupta007.github.io/flexmuscle/",
-    tech: "React",
+    tech: "React.js",
   },
   {
     id: 5,
@@ -64,7 +65,7 @@ export const projects = [
       "Developed a responsive Nike landing page using React and Tailwind CSS, ensuring an optimal user experience across various devices and screen sizes, while maintaining a clean and modern design",
     github: "https://github.com/vishantgupta007/nike_website_landing_page",
     live: "https://nike-website-landingpage.netlify.app",
-    tech: "React",
+    tech: "React.js",
   },
   {
     id: 6,
@@ -85,6 +86,15 @@ export const projects = [
     github: "https://github.com/vishantgupta007/vishantgupta007.github.io",
     live: "https://vishantgupta007.github.io/",
     tech: "HTML, CSS, JavaScript",
+  },
+  {
+    id: 8,
+    title: "More Coming...",
+    img: soon,
+    about: "Stay tuned for more epic projects coming your way!",
+    github: "https://github.com/vishantgupta007/vishantgupta007.github.io",
+    // live: "https://vishantgupta007.github.io/",
+    // tech: "HTML, CSS, JavaScript",
   },
 ];
 

@@ -70,6 +70,22 @@ h1 {
   position: relative;
 }
 
+.project-serial {
+  position: absolute;
+  top: -20%;
+  left: 0;
+  font-size: 105px;
+  font-family: sans-serif;
+  font-weight: 900;
+  opacity: 0.1;
+}
+
+.portfolio_item:hover .project-serial {
+  color: var(--color-yellow);
+  opacity: 0.85;
+  z-index: -30;
+}
+
 .portfolio_item:hover {
   border-color: var(--color-yellow);
   background-color: rgb(34 31 31, 0.15);
@@ -100,7 +116,6 @@ h1 {
   font-size: 15px;
   text-align: justify;
   font-weight: semi-bold;
-  /* color: var(--color-space); */
 }
 
 .portfolio_item_cta {

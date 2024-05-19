@@ -10,18 +10,19 @@ header > span {
 
 header > span::after {
   position: absolute;
-  content: "HTML \A CSS \A JavaScript \A DOM \A RestAPI \A React.js \A Redux \A TailWindCSS \A MaterialUI \A Webflow";
-  font-size: 45px;
-  line-height: -10px;
+  content: "HTML \A CSS \A JavaScript \A DOM \A RestAPI \A React.js \A Next.js \A Redux \A TailWindCSS \A MaterialUI \A Webflow";
+  font-size: 44px;
+  font-weight: bolder;
+  line-height: 1.6;
 
-  top: -10%;
+  top: -15%;
   bottom: 0;
   left: 40px;
   right: 0;
   letter-spacing: 10px;
 
   color: rgb(57, 56, 56);
-  font-weight: 800;
+  font-weight: 900;
   opacity: 0.55;
   z-index: -10;
   font-family: "Montserrat" !important;
